@@ -1,0 +1,48 @@
+# .iba.yaml - IBA Twin Guard · Intent Certificate
+# Patent GB2603013.0 (Pending) · intentbound.com
+
+intent:
+  description: "Personal assistant twin for internal meeting summaries and scheduling only. No public use. No commercial use. No replication."
+
+identity:
+  principal: "user@example.com"
+  twin_id: "my-twin-v1"
+  biometric_hash: "sha256:demo-hash"
+
+scope:
+  - meeting
+  - summary
+  - schedule
+  - internal
+  - communication
+  - draft
+  - personal
+
+denied:
+  - public
+  - commercial
+  - replication
+  - replicate
+  - undisclosed
+  - impersonation
+  - legal
+
+default_posture: DENY_ALL
+
+kill_threshold: "financial_transaction | financial transaction | legal_representation | further_replication | replicate"
+
+temporal_scope:
+  hard_expiry: "2026-12-31"
+  session_max_minutes: 60
+
+hollowing:
+  level: medium
+  redact:
+    - financial_data
+    - medical_history
+    - private_relationships
+    - authentication_credentials
+
+audit:
+  chain: witnessbound
+  log_every_activation: true
