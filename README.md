@@ -198,7 +198,7 @@ Edit the `.iba.yaml`. Type any twin activation action. Watch the gate fire — A
 ## Patent & Standards Record
 
 ```
-Patent:   GB2603013.0 (Pending) · UK IPO · Filed February 5, 2026
+Patent:   GB2603013.0 (Pending) · UK IPO · Filed February 10, 2026
 PCT:      150+ countries · Protected until August 2028
 IETF:     draft-williams-intent-token-00 · CONFIRMED LIVE
           datatracker.ietf.org/doc/draft-williams-intent-token/
